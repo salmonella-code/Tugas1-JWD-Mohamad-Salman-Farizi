@@ -1,0 +1,100 @@
+.container{
+    margin: 30px auto;
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+.container img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.diver{
+    background-color: #999999;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 3px;
+    margin-top: 10px;
+}
+
+.diver:last-child{
+    background-color: #666666;
+    height: 20px;
+}
+
+.label{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.label p{
+    margin: 0;
+}
+
+.input-group{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.input-group .group input{
+    width: 150px;
+}
+
+.input-group:nth-child(4) input{
+    width: calc(100% - 180px);
+}
+
+.input-group .radio label{
+    font-weight: bold;
+}
+
+.input-group .agama{
+    display: flex;
+}
+
+.input-group .agama h4{
+    margin: 0 5px;
+}
+
+.input-group #agama{
+    text-transform: capitalize;
+}
+
+.input-group .nilai{
+    display: flex;
+}
+
+.input-group .nilai input{
+    width: 80px;
+}
+
+.input-group .nilai p{
+    font-style: italic;
+    margin: 0 10px;
+}
+
+.button-group{
+    margin-top: 10px;
+    margin-left: 175px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .input-group{
+        flex-direction: column;
+    }
+
+    .button-group{
+        margin-left: 0;
+    }
+}
